@@ -1,0 +1,9 @@
+#!/bin/sh
+# Copyright 2017-TODAY LasLabs Inc.
+# License Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html).
+
+rails spree:install:migrations
+rails spree_auth:install:migrations
+rails spree_gateway:install:migrations
+
+rails db:migrate

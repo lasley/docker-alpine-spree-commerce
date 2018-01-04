@@ -1,0 +1,11 @@
+#!/bin/sh
+# Copyright 2017-TODAY LasLabs Inc.
+# License Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html).
+
+# If the current directory is empty, we need to create new rails project
+if [ ! "$(find . -maxdepth 1 -not -type d)" ]; then
+    echo "Creating new Rails project"
+    rails new -s ./
+fi
+
+spree install -A ./

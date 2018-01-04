@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# Copyright 2016 LasLabs Inc.
+# License Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html).
+
+set -e
+
+curl --fail http://localhost:300/0
+
+echo "Curl passed on $DOCKER_CONTAINER_ID"

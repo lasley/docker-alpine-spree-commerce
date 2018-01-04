@@ -43,7 +43,8 @@ pleasure:
 Known Issues / Roadmap
 ======================
 
-*
+* TBD what happens when an existing deploy is updated using this.
+* Switch from default Rails server (use Puma or Unicorn or something)
 
 Bug Tracker
 ===========
